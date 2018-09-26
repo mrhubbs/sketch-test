@@ -1,0 +1,51 @@
+#!/bin/sh
+
+# post-merge hook for Sketch files Git tracking
+
+# Set UTF-8 encoding
+export LANG=UTF-8
+# Needed to work in SourceTree
+export PATH=/usr/local/bin:$PATH
+
+# Git repository absolute path
+git_root=`git rev-parse --show-toplevel`
+# Unzipped Sketch files path
+unzipped_directory_name="_unzipped"
+unzipped_root="$git_root/$unzipped_directory_name"
+# Local backups directory path
+backup_root="$git_root/_backup"
+
+for unzipped_directory in $(find "$unzipped_directory_name" -type d | grep ".sketch$")
+do
+
+  # Sketch file path
+  sketch=`echo "$git_root/$unzipped_directory" | sed "s/$unzipped_directory_name\///"`
+  # Sketch file directory path
+  sketch_directory=`dirname "$sketch"`
+
+  echo "Processing '`basename $sketch`'."
+
+  if mkdir -p "$sketch_directory"
+  then
+
+    # Backup existing Sketch file
+    backup_path=`echo "$backup_root/$(date +"%Y-%m-%d-%H-%M-%S")/$unzipped_directory" | sed "s/$unzipped_directory_name\///"`
+    mkdir -p "`dirname $backup_path`"
+    mv "$sketch" "$backup_path"
+
+    # Zip the directory to recreate the Sketch file
+    cd "$unzipped_directory"
+    if zip -rq "$sketch" *
+    then
+      echo "  '`basename $sketch`' Sketch file generated."
+    else
+      echo "  Couldn't generate '`basename $sketch`' Sketch file."
+      exit 1
+    fi
+    cd "$git_root"
+  else
+    echo "  Couldn't create '$sketch_directory' directory."
+    exit 1
+  fi
+
+done
