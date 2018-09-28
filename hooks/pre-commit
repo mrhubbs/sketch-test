@@ -11,8 +11,6 @@ export PATH=/usr/local/bin:$PATH
 git_root=`git rev-parse --show-toplevel`
 # Unzipped Sketch files path
 unzipped_root="$git_root/_unzipped"
-# Untouched Sketch files path
-untouched_root="$git_root/_untouched"
 
 # Array of all staged files
 git_diff=`git diff --name-only --cached | grep ".sketch$"`
@@ -29,10 +27,6 @@ else
     sketch="$git_root/$staged_sketch"
     # Unzipped Sketch file directory path
     unzipped_directory="$unzipped_root/$staged_sketch"
-    # Untouched Sketch file path
-    untouched_sketch="$untouched_root/$staged_sketch"
-    # Untouched Sketch file directory path
-    untouched_directory=`dirname "$untouched_sketch"`
 
     echo "Processing '`basename $sketch`'."
 
@@ -42,23 +36,6 @@ else
     # If Sketch file wasn't deleted
     if ! git diff --summary --cached -- $staged_sketch | grep "delete" 2>&1 > /dev/null
     then
-
-      # Copy untouched Sketch file to untouched folder
-      if mkdir -p "$untouched_directory"
-      then
-        if cp "$sketch" "$untouched_sketch"
-        then
-          echo "  Untouched '`basename $sketch`' backed up."
-        else
-          echo "  Couldn't copy untouched '`basename $sketch`'."
-          exit 1
-        fi
-      else
-        echo "  Couldn't create '$untouched_root' directory."
-        exit 1
-      fi
-      # Stage untouched file
-      git add "$untouched_sketch"
 
       # Create directory
       if mkdir -p "$unzipped_directory"
@@ -104,13 +81,10 @@ else
       fi
     else
       rm "$sketch"
-      rm -rf "$untouched_sketch"
+      # rm -rf "$untouched_sketch"
       echo "  '`basename $sketch`' was removed with all unzipped and untouched data."
     fi
     git add "$unzipped_directory/*"
-
-    # Unstage working Sketch file
-    git rm --cached "$sketch"
 
   done <<< "$git_diff"
 fi
