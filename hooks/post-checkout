@@ -35,7 +35,17 @@ do
 
     # Zip the directory to recreate the Sketch file
     cd "$unzipped_directory"
-    if zip -rq "$sketch" *
+
+    # Set access and modified times of all files going into the archive. This
+    # keeps them consistent, so the hashes of archives with identical file
+    # contents will be identical. Otherwise we get into nasty situations where
+    # the sketch files seem to be changing after every merge and checkout, but
+    # they aren't (because they were re-created with identical files with
+    # different timestamps).
+    touch -a -m -t 197001010000.00 {*,**/*}
+
+    # rqX = recursive, quiet, exclude extra file attributes
+    if zip -rqX "$sketch" *
     then
       echo "  '`basename $sketch`' Sketch file generated."
     else
