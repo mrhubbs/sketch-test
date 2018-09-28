@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# unzip the sketch files so we can view the differences with git
+
+# TODO: currently the pre-commit hook only operates on staged sketch files.
+# Stage all sketch files. In the future, split the functionality out so it can
+# operate on non-staged files.
+git stage *.sketch
+
+.git/hooks/pre-commit
