@@ -28,7 +28,7 @@ do
   if mkdir -p "$sketch_directory"
   then
 
-    # Backup existing Sketch file
+    # Backup existing Sketch file - in case re-creating the sketch file fails
     backup_path=`echo "$backup_root/$(date +"%Y-%m-%d-%H-%M-%S")/$unzipped_directory" | sed "s/$unzipped_directory_name\///"`
     mkdir -p "`dirname $backup_path`"
     mv "$sketch" "$backup_path"
@@ -47,5 +47,8 @@ do
     echo "  Couldn't create '$sketch_directory' directory."
     exit 1
   fi
+
+  # the creation of all the sketch files was successful, so remove the backups
+  rm -r ${backup_root}
 
 done
