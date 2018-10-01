@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+# Creates a user.json file if one does not exist in the given directory.
+# Expects argument 1 to be an absolute path to the unzipped sketch file.
+
+import os
+import sys
+import json
+
+if len(sys.argv) != 2:
+    print("make-user-json: Need path and only path!")
+    sys.exit(1)
+
+working_path = sys.argv[1]
+
+
+# check if the user.json file exists
+def check_user_json_exists():
+    return os.path.exists(os.path.join(working_path, 'user.json'))
+
+# get the first page ID from the meta.json file
+def get_first_page_id():
+    meta_path = os.path.join(working_path, 'meta.json')
+    with open(meta_path, 'r') as meta:
+        meta_file = json.load(meta)
+        pages_and_artboards = list(meta_file['pagesAndArtboards'].keys())
+
+    if len(pages_and_artboards) < 1:
+        print("make-user-json: meta.json has no pages!")
+        sys.exit(1)
+
+    return pages_and_artboards[0]
+
+# make the usr.json file and write it to disk
+def create_user_json(page_id):
+    data = '''{
+    "document": {
+        "pageListHeight": -1
+    },
+    "''' + page_id + '''\": {
+        "scrollOrigin": "{0, 0}",
+        "zoomValue": 1
+    }
+}'''
+
+    with open(os.path.join(working_path, 'user.json'), 'w') as user:
+        user.write(data)
+
+if not check_user_json_exists():
+    # The first thing we need to do is extract the ID of the first page.
+    # We'll grab this from the meta.json file.
+    page_id = get_first_page_id()
+
+    # create the file
+    print('making user.json: page ID = {}'.format(page_id))
+    create_user_json(page_id)
