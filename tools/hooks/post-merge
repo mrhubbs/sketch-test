@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# post-checkout hook for Sketch files Git tracking
+# post-merge hook for Sketch files Git tracking
 
 # Set UTF-8 encoding
 export LANG=UTF-8
@@ -36,13 +36,8 @@ do
     # Zip the directory to recreate the Sketch file
     cd "$unzipped_directory"
 
-    # Set access and modified times of all files going into the archive. This
-    # keeps them consistent, so the hashes of archives with identical file
-    # contents will be identical. Otherwise we get into nasty situations where
-    # the sketch files seem to be changing after every merge and checkout, but
-    # they aren't (because they were re-created with identical files with
-    # different timestamps).
-    touch -a -m -t 197001010000.00 {*,**/*}
+    # create user.json if it doesn't exist
+    "$git_root/tools/make-user-json" "$git_root/$unzipped_directory" || exit 1
 
     # rqX = recursive, quiet, exclude extra file attributes
     if zip -rqX "$sketch" *
@@ -58,7 +53,7 @@ do
     exit 1
   fi
 
-  # the creation of all the sketch files was successful, so remove the backups
-  rm -r ${backup_root}
-
 done
+
+# the creation of all the sketch files was successful, so remove the backups
+rm -r ${backup_root}

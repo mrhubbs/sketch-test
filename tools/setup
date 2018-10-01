@@ -8,8 +8,4 @@ brew install python3 node
 npm install
 
 # install hooks
-echo "\033[0;35m\n[> installing git hooks...\033[0m"
-cp hooks/* .git/hooks/
-chmod +x .git/hooks/{pre-commit,post-checkout,post-merge}
-
-echo "\033[1;37m\nall done!\033[0m"
+./install-hooks

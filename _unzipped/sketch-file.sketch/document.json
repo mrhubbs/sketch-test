@@ -1,6 +1,6 @@
 {
     "_class": "document",
-    "do_objectID": "B2ABF7EE-6179-4480-95B6-48FB664E0F0E",
+    "do_objectID": "64FE319A-7321-45BE-9411-17FAAAA41A5D",
     "assets": {
         "_class": "assetCollection",
         "colors": [],
@@ -34,5 +34,10 @@
             "_ref_class": "MSImmutablePage",
             "_ref": "pages/4611FFA2-A1D3-42F3-9531-30B266E0088F"
         }
-    ]
+    ],
+    "userInfo": {
+        "com.invisionlabs.sync": {
+            "metadata": "{\"hasSynced\":0,\"hasProjectIdChanged\":0,\"projectId\":0,\"publicLink\":\"\",\"resolution\":2,\"syncAll\":1}"
+        }
+    }
 }
