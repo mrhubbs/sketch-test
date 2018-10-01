@@ -1,6 +1,7 @@
 {
     "_class": "page",
     "do_objectID": "4611FFA2-A1D3-42F3-9531-30B266E0088F",
+    "booleanOperation": 0,
     "exportOptions": {
         "_class": "exportOptions",
         "exportFormats": [],
@@ -16,6 +17,7 @@
         "x": 0,
         "y": 0
     },
+    "isFixedToViewport": false,
     "isFlippedHorizontal": false,
     "isFlippedVertical": false,
     "isLocked": false,
@@ -29,15 +31,17 @@
     "shouldBreakMaskChain": false,
     "style": {
         "_class": "style",
-        "endDecorationType": 0,
+        "endMarkerType": 0,
         "miterLimit": 10,
-        "startDecorationType": 0
+        "startMarkerType": 0,
+        "windingRule": 1
     },
     "hasClickThrough": true,
     "layers": [
         {
             "_class": "shapeGroup",
             "do_objectID": "254D6758-5762-4FF3-B405-286A1F807B3D",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "exportFormats": [],
@@ -53,6 +57,7 @@
                 "x": 349,
                 "y": 188
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -90,7 +95,7 @@
                         "thickness": 1
                     }
                 ],
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "fills": [
                     {
                         "_class": "fill",
@@ -110,13 +115,15 @@
                     }
                 ],
                 "miterLimit": 10,
-                "startDecorationType": 0
+                "startMarkerType": 0,
+                "windingRule": 1
             },
             "hasClickThrough": false,
             "layers": [
                 {
                     "_class": "rectangle",
                     "do_objectID": "4430E22D-5676-414D-B737-B067CBBF098A",
+                    "booleanOperation": -1,
                     "exportOptions": {
                         "_class": "exportOptions",
                         "exportFormats": [],
@@ -132,6 +139,7 @@
                         "x": 0,
                         "y": 0
                     },
+                    "isFixedToViewport": false,
                     "isFlippedHorizontal": false,
                     "isFlippedVertical": false,
                     "isLocked": false,
@@ -143,7 +151,6 @@
                     "resizingType": 0,
                     "rotation": 0,
                     "shouldBreakMaskChain": false,
-                    "booleanOperation": -1,
                     "edited": false,
                     "isClosed": true,
                     "pointRadiusBehaviour": 1,
@@ -198,11 +205,11 @@
             "windingRule": 1
         },
         {
-            "_class": "shapeGroup",
-            "do_objectID": "639ACEA8-96D4-4E0F-B789-F21CA3AE17C5",
+            "_class": "symbolInstance",
+            "do_objectID": "E269AEA7-25C6-4028-B78C-B019D32AB890",
+            "booleanOperation": -1,
             "exportOptions": {
                 "_class": "exportOptions",
-                "do_objectID": "87DA660F-0675-4D22-8C8D-2C72E5958C33",
                 "exportFormats": [],
                 "includedLayerIds": [],
                 "layerOptions": 0,
@@ -210,18 +217,18 @@
             },
             "frame": {
                 "_class": "rect",
-                "do_objectID": "91DF7C80-0101-4ADC-A189-675978172FD2",
                 "constrainProportions": false,
                 "height": 124,
                 "width": 317,
                 "x": -38,
                 "y": 188
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
             "isVisible": true,
-            "layerListExpandedType": 1,
+            "layerListExpandedType": 0,
             "name": "Rectangle Copy 2",
             "nameIsFixed": false,
             "resizingConstraint": 63,
@@ -230,144 +237,21 @@
             "shouldBreakMaskChain": false,
             "style": {
                 "_class": "style",
-                "do_objectID": "14384909-3A08-403F-A9E0-44FE7AD840A2",
-                "blur": {
-                    "_class": "blur",
-                    "do_objectID": "D6E12847-3DD7-4038-B9D1-ED76DA6092F0",
-                    "isEnabled": false,
-                    "center": "{0.5, 0.5}",
-                    "motionAngle": 0,
-                    "radius": 1,
-                    "type": 0
-                },
-                "borders": [
-                    {
-                        "_class": "border",
-                        "isEnabled": true,
-                        "color": {
-                            "_class": "color",
-                            "alpha": 1,
-                            "blue": 0.05882352941176472,
-                            "green": 0.596078431372549,
-                            "red": 1
-                        },
-                        "fillType": 0,
-                        "position": 1,
-                        "thickness": 1
-                    }
-                ],
-                "endDecorationType": 0,
-                "fills": [
-                    {
-                        "_class": "fill",
-                        "isEnabled": true,
-                        "color": {
-                            "_class": "color",
-                            "alpha": 1,
-                            "blue": 0.05882352941176472,
-                            "green": 0.596078431372549,
-                            "red": 1
-                        },
-                        "fillType": 0,
-                        "noiseIndex": 0,
-                        "noiseIntensity": 0,
-                        "patternFillType": 1,
-                        "patternTileScale": 1
-                    }
-                ],
+                "endMarkerType": 0,
                 "miterLimit": 10,
-                "startDecorationType": 0
+                "startMarkerType": 0,
+                "windingRule": 1
             },
-            "hasClickThrough": false,
-            "layers": [
-                {
-                    "_class": "rectangle",
-                    "do_objectID": "CB50210D-BCC8-4713-A612-E0B41A1CA880",
-                    "exportOptions": {
-                        "_class": "exportOptions",
-                        "do_objectID": "B82EDA18-D389-41E7-B99C-0A90C193BEA4",
-                        "exportFormats": [],
-                        "includedLayerIds": [],
-                        "layerOptions": 0,
-                        "shouldTrim": false
-                    },
-                    "frame": {
-                        "_class": "rect",
-                        "do_objectID": "9C62A2F6-D9D2-46CF-863B-1215D2143638",
-                        "constrainProportions": false,
-                        "height": 124,
-                        "width": 317,
-                        "x": 0,
-                        "y": 0
-                    },
-                    "isFlippedHorizontal": false,
-                    "isFlippedVertical": false,
-                    "isLocked": false,
-                    "isVisible": true,
-                    "layerListExpandedType": 0,
-                    "name": "Path",
-                    "nameIsFixed": false,
-                    "resizingConstraint": 63,
-                    "resizingType": 0,
-                    "rotation": 0,
-                    "shouldBreakMaskChain": false,
-                    "booleanOperation": -1,
-                    "edited": false,
-                    "isClosed": true,
-                    "pointRadiusBehaviour": 1,
-                    "points": [
-                        {
-                            "_class": "curvePoint",
-                            "cornerRadius": 0,
-                            "curveFrom": "{0, 0}",
-                            "curveMode": 1,
-                            "curveTo": "{0, 0}",
-                            "hasCurveFrom": false,
-                            "hasCurveTo": false,
-                            "point": "{0, 0}"
-                        },
-                        {
-                            "_class": "curvePoint",
-                            "cornerRadius": 0,
-                            "curveFrom": "{1, 0}",
-                            "curveMode": 1,
-                            "curveTo": "{1, 0}",
-                            "hasCurveFrom": false,
-                            "hasCurveTo": false,
-                            "point": "{1, 0}"
-                        },
-                        {
-                            "_class": "curvePoint",
-                            "cornerRadius": 0,
-                            "curveFrom": "{1, 1}",
-                            "curveMode": 1,
-                            "curveTo": "{1, 1}",
-                            "hasCurveFrom": false,
-                            "hasCurveTo": false,
-                            "point": "{1, 1}"
-                        },
-                        {
-                            "_class": "curvePoint",
-                            "cornerRadius": 0,
-                            "curveFrom": "{0, 1}",
-                            "curveMode": 1,
-                            "curveTo": "{0, 1}",
-                            "hasCurveFrom": false,
-                            "hasCurveTo": false,
-                            "point": "{0, 1}"
-                        }
-                    ],
-                    "fixedRadius": 0,
-                    "hasConvertedToNewRoundCorners": true
-                }
-            ],
-            "clippingMaskMode": 0,
-            "hasClippingMask": false,
-            "windingRule": 1
+            "horizontalSpacing": 0,
+            "overrideValues": [],
+            "scale": 1,
+            "symbolID": "CB554067-77C0-4529-A667-172ED9FC5198",
+            "verticalSpacing": 0
         },
         {
             "_class": "shapeGroup",
             "do_objectID": "6994F268-9AC7-4428-BD3B-73E7C504470E",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "do_objectID": "8C487DBC-AB69-4929-9A0E-37C7F257D391",
@@ -385,6 +269,7 @@
                 "x": 349,
                 "y": 395
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -424,7 +309,7 @@
                         "thickness": 1
                     }
                 ],
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "fills": [
                     {
                         "_class": "fill",
@@ -444,13 +329,15 @@
                     }
                 ],
                 "miterLimit": 10,
-                "startDecorationType": 0
+                "startMarkerType": 0,
+                "windingRule": 1
             },
             "hasClickThrough": false,
             "layers": [
                 {
                     "_class": "rectangle",
                     "do_objectID": "7CD8B239-8203-4F24-B9A4-18CA7143947C",
+                    "booleanOperation": -1,
                     "exportOptions": {
                         "_class": "exportOptions",
                         "do_objectID": "4059EF8D-725B-4747-A1E9-28B59F8041DF",
@@ -468,6 +355,7 @@
                         "x": 0,
                         "y": 0
                     },
+                    "isFixedToViewport": false,
                     "isFlippedHorizontal": false,
                     "isFlippedVertical": false,
                     "isLocked": false,
@@ -479,7 +367,6 @@
                     "resizingType": 0,
                     "rotation": 0,
                     "shouldBreakMaskChain": false,
-                    "booleanOperation": -1,
                     "edited": false,
                     "isClosed": true,
                     "pointRadiusBehaviour": 1,
@@ -536,6 +423,7 @@
         {
             "_class": "shapeGroup",
             "do_objectID": "3B1E1C5A-EB79-4153-941E-D503D855442F",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "do_objectID": "4018E333-530C-4A50-A00C-5C3CD65066B6",
@@ -553,6 +441,7 @@
                 "x": 684,
                 "y": 565
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -592,7 +481,7 @@
                         "thickness": 1
                     }
                 ],
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "fills": [
                     {
                         "_class": "fill",
@@ -612,13 +501,15 @@
                     }
                 ],
                 "miterLimit": 10,
-                "startDecorationType": 0
+                "startMarkerType": 0,
+                "windingRule": 1
             },
             "hasClickThrough": false,
             "layers": [
                 {
                     "_class": "rectangle",
                     "do_objectID": "DD863851-0F86-4E40-87FA-525B53F8A83B",
+                    "booleanOperation": -1,
                     "exportOptions": {
                         "_class": "exportOptions",
                         "do_objectID": "C992F2C0-CB93-4424-BFB5-3AC3884A3208",
@@ -636,6 +527,7 @@
                         "x": 0,
                         "y": 0
                     },
+                    "isFixedToViewport": false,
                     "isFlippedHorizontal": false,
                     "isFlippedVertical": false,
                     "isLocked": false,
@@ -647,7 +539,6 @@
                     "resizingType": 0,
                     "rotation": 0,
                     "shouldBreakMaskChain": false,
-                    "booleanOperation": -1,
                     "edited": false,
                     "isClosed": true,
                     "pointRadiusBehaviour": 1,
@@ -704,6 +595,7 @@
         {
             "_class": "shapeGroup",
             "do_objectID": "180CACFF-56B0-4349-ABD4-D217CFC38DE7",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "do_objectID": "718CA61F-A7F7-4664-8798-2A0CBC325663",
@@ -721,6 +613,7 @@
                 "x": -38,
                 "y": 395
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -760,7 +653,7 @@
                         "thickness": 1
                     }
                 ],
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "fills": [
                     {
                         "_class": "fill",
@@ -780,13 +673,15 @@
                     }
                 ],
                 "miterLimit": 10,
-                "startDecorationType": 0
+                "startMarkerType": 0,
+                "windingRule": 1
             },
             "hasClickThrough": false,
             "layers": [
                 {
                     "_class": "rectangle",
                     "do_objectID": "8AB5C003-6031-4844-BF6C-7B2F028096BC",
+                    "booleanOperation": -1,
                     "exportOptions": {
                         "_class": "exportOptions",
                         "do_objectID": "44B28569-6EEE-4BB4-9315-C095C3C1854F",
@@ -804,6 +699,7 @@
                         "x": 0,
                         "y": 0
                     },
+                    "isFixedToViewport": false,
                     "isFlippedHorizontal": false,
                     "isFlippedVertical": false,
                     "isLocked": false,
@@ -815,7 +711,6 @@
                     "resizingType": 0,
                     "rotation": 0,
                     "shouldBreakMaskChain": false,
-                    "booleanOperation": -1,
                     "edited": false,
                     "isClosed": true,
                     "pointRadiusBehaviour": 1,
@@ -872,6 +767,7 @@
         {
             "_class": "text",
             "do_objectID": "C1F6BE88-51D7-4368-A5CB-E968852BAD4C",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "exportFormats": [],
@@ -887,6 +783,7 @@
                 "x": 372,
                 "y": 215
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -900,9 +797,9 @@
             "shouldBreakMaskChain": false,
             "style": {
                 "_class": "style",
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "miterLimit": 10,
-                "startDecorationType": 0,
+                "startMarkerType": 0,
                 "textStyle": {
                     "_class": "textStyle",
                     "encodedAttributes": {
@@ -928,7 +825,8 @@
                         "textStyleVerticalAlignmentKey": 0
                     },
                     "verticalAlignment": 0
-                }
+                },
+                "windingRule": 1
             },
             "attributedString": {
                 "_class": "attributedString",
@@ -972,6 +870,7 @@
         {
             "_class": "text",
             "do_objectID": "DE643067-7D9D-4307-A6B1-3FD4EA678171",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "do_objectID": "B9795C6F-0C38-43DE-9EF4-B191FAB293A1",
@@ -989,6 +888,7 @@
                 "x": -15,
                 "y": 215
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -1003,9 +903,9 @@
             "style": {
                 "_class": "style",
                 "do_objectID": "8CF2B64F-1DA7-4983-B2B1-04EBACDC1EAB",
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "miterLimit": 10,
-                "startDecorationType": 0,
+                "startMarkerType": 0,
                 "textStyle": {
                     "_class": "textStyle",
                     "do_objectID": "3B670893-14A4-4048-85B8-C2D2ECD3AEE5",
@@ -1032,7 +932,8 @@
                         "textStyleVerticalAlignmentKey": 0
                     },
                     "verticalAlignment": 0
-                }
+                },
+                "windingRule": 1
             },
             "attributedString": {
                 "_class": "attributedString",
@@ -1076,6 +977,7 @@
         {
             "_class": "text",
             "do_objectID": "5267D16B-B422-47C8-9B27-C62482B0822C",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "do_objectID": "1F83DEEA-05CB-4BAF-AAF6-00B1502099E1",
@@ -1093,6 +995,7 @@
                 "x": 372,
                 "y": 422
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -1107,9 +1010,9 @@
             "style": {
                 "_class": "style",
                 "do_objectID": "E11652F9-7DD9-4E1C-B100-B0B0BD8387C0",
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "miterLimit": 10,
-                "startDecorationType": 0,
+                "startMarkerType": 0,
                 "textStyle": {
                     "_class": "textStyle",
                     "do_objectID": "48FDE57C-B612-49BE-A816-0AE4FE451D59",
@@ -1136,7 +1039,8 @@
                         "textStyleVerticalAlignmentKey": 0
                     },
                     "verticalAlignment": 0
-                }
+                },
+                "windingRule": 1
             },
             "attributedString": {
                 "_class": "attributedString",
@@ -1180,6 +1084,7 @@
         {
             "_class": "text",
             "do_objectID": "C31CEDB4-51E7-4532-94DE-6234FE8745C2",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "do_objectID": "48046B6F-5FC6-4C86-8039-0A23D05901FA",
@@ -1197,6 +1102,7 @@
                 "x": 720,
                 "y": 620
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -1211,9 +1117,9 @@
             "style": {
                 "_class": "style",
                 "do_objectID": "FBB4E8E4-23AA-43FC-AAF6-F830F0C1C86D",
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "miterLimit": 10,
-                "startDecorationType": 0,
+                "startMarkerType": 0,
                 "textStyle": {
                     "_class": "textStyle",
                     "do_objectID": "3AABB630-7187-499C-BCFB-8DB32719B8FC",
@@ -1240,7 +1146,8 @@
                         }
                     },
                     "verticalAlignment": 0
-                }
+                },
+                "windingRule": 1
             },
             "attributedString": {
                 "_class": "attributedString",
@@ -1284,6 +1191,7 @@
         {
             "_class": "text",
             "do_objectID": "CBDEF7DB-7142-4283-B89B-63C6C989716E",
+            "booleanOperation": 0,
             "exportOptions": {
                 "_class": "exportOptions",
                 "do_objectID": "5F4A9A42-2F9A-41F1-85B3-C8C771187E15",
@@ -1301,6 +1209,7 @@
                 "x": -15,
                 "y": 422
             },
+            "isFixedToViewport": false,
             "isFlippedHorizontal": false,
             "isFlippedVertical": false,
             "isLocked": false,
@@ -1315,9 +1224,9 @@
             "style": {
                 "_class": "style",
                 "do_objectID": "44145A7D-E4AD-46B3-8F6A-1C7F0E97A2A6",
-                "endDecorationType": 0,
+                "endMarkerType": 0,
                 "miterLimit": 10,
-                "startDecorationType": 0,
+                "startMarkerType": 0,
                 "textStyle": {
                     "_class": "textStyle",
                     "do_objectID": "5C27DE12-50E5-4E0C-A8A7-6020EB4C84D3",
@@ -1344,7 +1253,8 @@
                         "textStyleVerticalAlignmentKey": 0
                     },
                     "verticalAlignment": 0
-                }
+                },
+                "windingRule": 1
             },
             "attributedString": {
                 "_class": "attributedString",
@@ -1384,6 +1294,245 @@
             "glyphBounds": "{{0, 13}, {265, 45}}",
             "lineSpacingBehaviour": 2,
             "textBehaviour": 0
+        },
+        {
+            "_class": "symbolMaster",
+            "do_objectID": "184F33F1-5381-4E03-95F2-950F9E4BE96B",
+            "booleanOperation": -1,
+            "exportOptions": {
+                "_class": "exportOptions",
+                "exportFormats": [],
+                "includedLayerIds": [],
+                "layerOptions": 0,
+                "shouldTrim": false
+            },
+            "frame": {
+                "_class": "rect",
+                "constrainProportions": false,
+                "height": 124,
+                "width": 317,
+                "x": 1281,
+                "y": 188
+            },
+            "isFixedToViewport": false,
+            "isFlippedHorizontal": false,
+            "isFlippedVertical": false,
+            "isLocked": false,
+            "isVisible": true,
+            "layerListExpandedType": 0,
+            "name": "Rectangle Copy 2",
+            "nameIsFixed": false,
+            "resizingConstraint": 63,
+            "resizingType": 0,
+            "rotation": 0,
+            "shouldBreakMaskChain": true,
+            "style": {
+                "_class": "style",
+                "endMarkerType": 0,
+                "miterLimit": 10,
+                "startMarkerType": 0,
+                "windingRule": 1
+            },
+            "hasClickThrough": true,
+            "layers": [
+                {
+                    "_class": "shapeGroup",
+                    "do_objectID": "639ACEA8-96D4-4E0F-B789-F21CA3AE17C5",
+                    "booleanOperation": 0,
+                    "exportOptions": {
+                        "_class": "exportOptions",
+                        "do_objectID": "87DA660F-0675-4D22-8C8D-2C72E5958C33",
+                        "exportFormats": [],
+                        "includedLayerIds": [],
+                        "layerOptions": 0,
+                        "shouldTrim": false
+                    },
+                    "frame": {
+                        "_class": "rect",
+                        "do_objectID": "91DF7C80-0101-4ADC-A189-675978172FD2",
+                        "constrainProportions": false,
+                        "height": 124,
+                        "width": 317,
+                        "x": 0,
+                        "y": 0
+                    },
+                    "isFixedToViewport": false,
+                    "isFlippedHorizontal": false,
+                    "isFlippedVertical": false,
+                    "isLocked": false,
+                    "isVisible": true,
+                    "layerListExpandedType": 1,
+                    "name": "Rectangle Copy 2",
+                    "nameIsFixed": false,
+                    "resizingConstraint": 63,
+                    "resizingType": 0,
+                    "rotation": 0,
+                    "shouldBreakMaskChain": false,
+                    "style": {
+                        "_class": "style",
+                        "do_objectID": "14384909-3A08-403F-A9E0-44FE7AD840A2",
+                        "blur": {
+                            "_class": "blur",
+                            "do_objectID": "D6E12847-3DD7-4038-B9D1-ED76DA6092F0",
+                            "isEnabled": false,
+                            "center": "{0.5, 0.5}",
+                            "motionAngle": 0,
+                            "radius": 1,
+                            "type": 0
+                        },
+                        "borders": [
+                            {
+                                "_class": "border",
+                                "isEnabled": true,
+                                "color": {
+                                    "_class": "color",
+                                    "alpha": 1,
+                                    "blue": 0.05882352941176472,
+                                    "green": 0.596078431372549,
+                                    "red": 1
+                                },
+                                "fillType": 0,
+                                "position": 1,
+                                "thickness": 1
+                            }
+                        ],
+                        "endMarkerType": 0,
+                        "fills": [
+                            {
+                                "_class": "fill",
+                                "isEnabled": true,
+                                "color": {
+                                    "_class": "color",
+                                    "alpha": 1,
+                                    "blue": 0.2588235294117647,
+                                    "green": 0.3058823529411765,
+                                    "red": 0.9019607843137255
+                                },
+                                "fillType": 0,
+                                "noiseIndex": 0,
+                                "noiseIntensity": 0,
+                                "patternFillType": 1,
+                                "patternTileScale": 1
+                            }
+                        ],
+                        "miterLimit": 10,
+                        "startMarkerType": 0,
+                        "windingRule": 1
+                    },
+                    "hasClickThrough": false,
+                    "layers": [
+                        {
+                            "_class": "rectangle",
+                            "do_objectID": "CB50210D-BCC8-4713-A612-E0B41A1CA880",
+                            "booleanOperation": -1,
+                            "exportOptions": {
+                                "_class": "exportOptions",
+                                "do_objectID": "B82EDA18-D389-41E7-B99C-0A90C193BEA4",
+                                "exportFormats": [],
+                                "includedLayerIds": [],
+                                "layerOptions": 0,
+                                "shouldTrim": false
+                            },
+                            "frame": {
+                                "_class": "rect",
+                                "do_objectID": "9C62A2F6-D9D2-46CF-863B-1215D2143638",
+                                "constrainProportions": false,
+                                "height": 124,
+                                "width": 317,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "isFixedToViewport": false,
+                            "isFlippedHorizontal": false,
+                            "isFlippedVertical": false,
+                            "isLocked": false,
+                            "isVisible": true,
+                            "layerListExpandedType": 0,
+                            "name": "Path",
+                            "nameIsFixed": false,
+                            "resizingConstraint": 63,
+                            "resizingType": 0,
+                            "rotation": 0,
+                            "shouldBreakMaskChain": false,
+                            "edited": false,
+                            "isClosed": true,
+                            "pointRadiusBehaviour": 1,
+                            "points": [
+                                {
+                                    "_class": "curvePoint",
+                                    "cornerRadius": 0,
+                                    "curveFrom": "{0, 0}",
+                                    "curveMode": 1,
+                                    "curveTo": "{0, 0}",
+                                    "hasCurveFrom": false,
+                                    "hasCurveTo": false,
+                                    "point": "{0, 0}"
+                                },
+                                {
+                                    "_class": "curvePoint",
+                                    "cornerRadius": 0,
+                                    "curveFrom": "{1, 0}",
+                                    "curveMode": 1,
+                                    "curveTo": "{1, 0}",
+                                    "hasCurveFrom": false,
+                                    "hasCurveTo": false,
+                                    "point": "{1, 0}"
+                                },
+                                {
+                                    "_class": "curvePoint",
+                                    "cornerRadius": 0,
+                                    "curveFrom": "{1, 1}",
+                                    "curveMode": 1,
+                                    "curveTo": "{1, 1}",
+                                    "hasCurveFrom": false,
+                                    "hasCurveTo": false,
+                                    "point": "{1, 1}"
+                                },
+                                {
+                                    "_class": "curvePoint",
+                                    "cornerRadius": 0,
+                                    "curveFrom": "{0, 1}",
+                                    "curveMode": 1,
+                                    "curveTo": "{0, 1}",
+                                    "hasCurveFrom": false,
+                                    "hasCurveTo": false,
+                                    "point": "{0, 1}"
+                                }
+                            ],
+                            "fixedRadius": 0,
+                            "hasConvertedToNewRoundCorners": true
+                        }
+                    ],
+                    "clippingMaskMode": 0,
+                    "hasClippingMask": false,
+                    "windingRule": 1
+                }
+            ],
+            "backgroundColor": {
+                "_class": "color",
+                "alpha": 1,
+                "blue": 1,
+                "green": 1,
+                "red": 1
+            },
+            "hasBackgroundColor": false,
+            "horizontalRulerData": {
+                "_class": "rulerData",
+                "base": 0,
+                "guides": []
+            },
+            "includeBackgroundColorInExport": true,
+            "includeInCloudUpload": true,
+            "isFlowHome": false,
+            "resizesContent": false,
+            "verticalRulerData": {
+                "_class": "rulerData",
+                "base": 0,
+                "guides": []
+            },
+            "includeBackgroundColorInInstance": false,
+            "symbolID": "CB554067-77C0-4529-A667-172ED9FC5198",
+            "changeIdentifier": 3
         }
     ],
     "horizontalRulerData": {
