@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "colorette": "^1.0.4",
+    "fs-jetpack": "^2.1.1",
     "sketchtool-cli": "0.0.2"
   }
 }
