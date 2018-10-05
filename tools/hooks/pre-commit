@@ -49,7 +49,7 @@ else
             # Prettify all JSON files
             for json_file in $(find . -name "*.json")
             do
-              if python3 -m json.tool "$json_file" "$json_file".pretty
+              if "$git_root/tools/prettify-json" "$json_file" "$json_file".pretty
               then
                 if mv "$json_file".pretty "$json_file"
                 then

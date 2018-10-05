@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+// prettifies a json file
+
+// usage:
+// prettify-json in-file-path out-file-path
+
+const jetpack = require('fs-jetpack');
+
+const inPath = process.argv[2]
+const outPath = process.argv[3]
+
+if (inPath === undefined) {
+  console.log('prettify-json: Need in file!');
+  process.exit(1);
+}
+if (outPath === undefined) {
+  console.log('prettify-json: Need out file!');
+  process.exit(1);
+}
+
+// read in file
+const inData = JSON.parse(jetpack.read(inPath));
+// write it out, pretty!
+jetpack.write(outPath, JSON.stringify(inData, null, '  '));

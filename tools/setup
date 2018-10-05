@@ -1,11 +1,19 @@
 #!/bin/sh
 
+# NOTE: this setup only supports Mac OS right now, because it uses homebrew to install things.
+
 echo "\033[0;35m[> installing 3rd-party software...\n\033[0m"
 
 # install 3rd-party software
-brew install python3 node
+
+# install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# install things through homebrew
+# (git actually comes pre-installed on Mac, but what the heck... let's just make the dependencies explicit)
+brew install python3 node git
 # install any npm modules
 npm install
 
 # install hooks
-./install-hooks
+./tools/install-hooks
